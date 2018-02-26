@@ -262,21 +262,11 @@
                 // console.log(sel);
 
                 var decodedData = JSON.parse(window.atob(data.content));
-
                  decodedData.contents.forEach(function(ds){
-
                     ds.monthlySales.splice(0,ds.monthlySales.length-sel);
-
                     updateLine(ds);
-                   
                 });
-
-
             })
-
-
-
-
         });  
 
                
